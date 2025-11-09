@@ -69,7 +69,7 @@ cols[3].metric("Max Drawdown (%)", f"{best['MaxDD']:.2f}")
 cols[4].metric("Trades", f"{int(best['Trades'])}")
 
 # ---------- PRICE CHART ----------
-st.markdown("### Price Chart with Moving Averages & Crossovers")
+st.markdown("### Price Chart with Moving Averages & Crossovers *(graphs may show approximate or illustrative data; included for visual enhancement)*")
 
 # Parse MA configuration
 fast, slow = map(int, best["MA_Pair"].split("/"))
@@ -125,3 +125,4 @@ else:
 # ---------- FOOTER ----------
 st.markdown("---")
 st.caption("© 2025 Adaptive Finance | Built for Hackathon Challenge | Powered by Streamlit")
+
